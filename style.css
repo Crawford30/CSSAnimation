@@ -14,5 +14,30 @@ body {
 
 img {
 
-	transform: rotateZ(-90deg) translateY(200px) scale(2);
+	transform: rotateZ(-90deg) translateY(200px) scale(2CSS);
+}
+
+
+.circle {
+
+	width: 100%;
+	padding: 50px 0px;
+	line-height: 0px;
+	margin: 60px auto;
+	background: pink;
+	color: white;
+	border-radius: 50px;
+	cursor: pointer; 
+	/* transition for the circle, to take 1s to transition to the hover state*/ 
+	/*transition: 1s;*/
+
+	/*applying it to the background only*/
+	transition: background 1s, transform 0.3s 1s; /*set tit for the background and transform property* 1s is the delay in  transform 0.3s 1s /
+
+}
+
+.circle:hover {
+
+	background: salmon;
+	transform: rotate(360deg);
 }
