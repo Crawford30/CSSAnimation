@@ -60,6 +60,8 @@ html, body {
 	/*adding the repeat count*/
 	animation-iteration-count: 3;
 
+	animation-timing-function: linear;
+
 
 }
 
@@ -73,6 +75,22 @@ html, body {
 	animation-fill-mode: both;
 	animation-iteration-count: infinite;
 	animation-direction: reverse;
+}
+
+.cloud {
+	position: absolute;
+}
+
+.cloud:nth-child(1){
+	width: 200px;
+	top: 120px;
+	opacity: 0.5;
+}
+
+.cloud:nth-child(2){
+	width: 300px;
+	top: 0px;
+	
 }
 
 
