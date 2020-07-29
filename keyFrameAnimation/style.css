@@ -55,12 +55,24 @@ html, body {
 
 	animation-name: drive;
 	animation-duration: 3s;
-	animation-fill-mode: both; /*(can be forwards, backwards, or both, infinite)keeps it staying to the right without bouncing back, it decides what to do with the element outside the the animation window*/
+	animation-fill-mode: both; /*(can be forwards, backwards, or both, infinite    )keeps it staying to the right without bouncing back, it decides what to do with the element outside the the animation window*/
 	
 	/*adding the repeat count*/
 	animation-iteration-count: 3;
 
 
+}
+
+.luigi {
+	position: absolute;
+	top: 100px;
+	left: 0px;
+
+	animation-name: drive;
+	animation-duration: 5s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
 }
 
 
