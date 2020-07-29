@@ -55,8 +55,10 @@ html, body {
 
 	animation-name: drive;
 	animation-duration: 3s;
-	animation-fill-mode: forwards; /*(can be forwards, backwards, or both,)keeps it staying to the right without bouncing back, it decides what to do with the element outside the the animation window*/
-	animation-delay: 3s;
+	animation-fill-mode: both; /*(can be forwards, backwards, or both, infinite)keeps it staying to the right without bouncing back, it decides what to do with the element outside the the animation window*/
+	
+	/*adding the repeat count*/
+	animation-iteration-count: 3;
 
 
 }
@@ -70,11 +72,16 @@ html, body {
 @keyframes drive {
 
 form{
-	transform: translateX(200px);
+	/*transform: translateX(200px);*/
+
+	/*setting it off the screen*/
+	transform: translateX(-500px);
 }
 
 to{
-	transform: translateX(700px);
+	/*transform: translateX(700px);*/
+
+	transform: translateX(1500px);
 }
 
 
